@@ -24,14 +24,13 @@ In a terminal or command window, navigate to the project directory `product_cate
 jupyter notebook boston_housing.ipynb
 ```
 
+This will open the Jupyter Notebook software and project file in your browser.
+
 ```bash
 cd dataset
 tar xvf zxpd_201712121136_12011_38441474.tar.gz
 ```
-
-This will open the Jupyter Notebook software and project file in your browser.
-
-Moreover, this will decompress the dataset.
+This will decompress the dataset.
 
 ### Data
 
@@ -42,10 +41,13 @@ However, for storage reasons, we will remain only the availabe products for sale
 After preprocessing that, we will have a modified dataset with 1,235,888 products and this format:
 
 **Main Features**
+
 0. `NAME`: product name;
+
 1. `BRAND`: product manufacturer brand;
 
 **Auxiliar Features**
+
 2. `GENDER`: if the product is for men, women...
 3. `ROOM`: if the product is for kitchen, office...
 4. `VEHICLE`: if the product is related to cars, motorcycles...
@@ -56,5 +58,6 @@ After preprocessing that, we will have a modified dataset with 1,235,888 product
 9. `CUP`: if the product is related to water, beer...
 
 **Target Variable**
+
 10. `CATEGORY`: product category path.
 
