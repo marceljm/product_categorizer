@@ -14,7 +14,7 @@ You will also need to have software installed to run and execute a [Jupyter Note
 
 ### Code
 
-Template code is provided in the `src/product_categorizer.ipynb` notebook file. You will also be required to use the included `adjust_category.py`, `constants.py`, `dsLib.py` and `mlLib.py` Python files and the `dataset/zxpd_201712121136_12011_38441474.tar.gz` dataset file to run the project.
+Template code is provided in the `src/product_categorizer.ipynb` notebook file. You will also be required to use the included `src/adjust_category.py`, `src/constants.py`, `src/dsLib.py` and `src/mlLib.py` Python files and the `dataset/zxpd_201712121136_12011_38441474.tar.gz` dataset file to run the project.
 
 ### Run
 
@@ -43,7 +43,6 @@ After preprocessing that, we will have a modified dataset with 1,235,888 product
 **Main Features**
 
 0. `NAME`: product name;
-
 1. `BRAND`: product manufacturer brand;
 
 **Auxiliar Features**
