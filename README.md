@@ -62,4 +62,5 @@ After preprocessing that, we will have a modified dataset with 1,235,888 product
 
 ### Udacity Review
 
-[Capstone proposal](https://review.udacity.com/?utm_medium=email&utm_campaign=ret_000_auto_ndxxx_submission-reviewed&utm_source=blueshift&utm_content=reviewsapp-submission-reviewed&bsft_clkid=bd2f1bac-8247-4cc5-b79c-7eeab5c967b7&bsft_uid=36b706d2-1907-436d-9a38-0a87700a7d12&bsft_mid=b6707c71-20a4-40fa-a1c6-aa8cbb4fa263&bsft_eid=6f154690-7543-4582-9be7-e397af208dbd&bsft_txnid=2d77b7bc-6c33-47f5-acd2-8a5c0488b4e9#!/reviews/915449)
+[Capstone proposal](https://review.udacity.com/#!/reviews/915449)
+[Capstone project](https://review.udacity.com/#!/reviews/1027271)
