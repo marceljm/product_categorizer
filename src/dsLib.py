@@ -7,8 +7,8 @@ from unidecode import unidecode
 
 
 # check if a product is available
-def available_product(line):
-    return 'true' in zanox_availability(line)
+def available_product(lst):
+    return 'true' in zanox_availability(lst)
 
 
 # replace the dictionary key by the value
@@ -71,7 +71,7 @@ def header():
 
 # join whitespaces
 def merge_space(name):
-    return " ".join(name.split())
+    return ' '.join(name.split())
 
 
 # remove words from the name
@@ -121,16 +121,33 @@ def trim_quotation_marks(line):
 
 
 # validate product
-def valid(line):
-    return available_product(line) and valid_category(line)
+def valid(lst, categoryCount):
+    if not walmart_dataset:
+        return True
+    return available_product(lst) and valid_price(lst) and valid_category(lst, categoryCount)
 
 
 # validate category
-def valid_category(line):
+def valid_category(lst, categoryCount):
+    category = zanox_category(lst)
+
+    if categoryCount[category] < MIN_CATEGORY_SIZE:
+        return False
+
     for word in INACTIVE:
-        if word in zanox_category(line).lower():
+        if word in category.lower():
             return False
     return True
+
+
+# validate price
+def valid_price(lst):
+    return float(zanox_price(lst)) < MAX_VALID_PRICE
+
+
+# check if it is a walmart dataset
+def walmart_dataset(lst):
+    return int(zanox_program_id(lst)) == WALMART_PROGRAM_ID
 
 
 # product availability
@@ -167,3 +184,7 @@ def zanox_name(lst):
 def zanox_price(lst):
     return lst[ZANOX_INDEX_PRICE]
 
+
+# program id
+def zanox_program_id(lst):
+    return lst[ZANOX_INDEX_PROGRAM_ID]
