@@ -63,4 +63,5 @@ After preprocessing that, we will have a modified dataset with 1,228,176 product
 ### Udacity Review
 
 0. [Capstone proposal](https://review.udacity.com/#!/reviews/915449)
-1. [Capstone project](https://review.udacity.com/#!/reviews/1027271)
+1. [Capstone project #1](https://review.udacity.com/#!/reviews/1027271)
+2. [Capstone project #2]((https://review.udacity.com/#!/reviews/1044802)
