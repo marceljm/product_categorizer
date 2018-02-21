@@ -38,7 +38,7 @@ The original dataset belongs to Walmart, consists of 2,625,975 products and can 
 
 However, for storage reasons, we will remain only the availabe products for sale, 1,244,371 products.
 
-After preprocessing that, we will have a modified dataset with 1,235,888 products and this format:
+After preprocessing that, we will have a modified dataset with 1,228,176 products and this format:
 
 **Main Features**
 
@@ -62,5 +62,5 @@ After preprocessing that, we will have a modified dataset with 1,235,888 product
 
 ### Udacity Review
 
-[Capstone proposal](https://review.udacity.com/#!/reviews/915449)
-[Capstone project](https://review.udacity.com/#!/reviews/1027271)
+0. [Capstone proposal](https://review.udacity.com/#!/reviews/915449)
+1. [Capstone project](https://review.udacity.com/#!/reviews/1027271)
